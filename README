@@ -7,3 +7,9 @@ http://maryrosecook.com
 maryrosecook@maryrosecook.com
 
 The code has been open sourced under the MIT license. Pistol Slut uses The Render Engine by Brett Fattori.
+
+It requires a local server, which can be started like this
+
+    python -m SimpleHTTPServer
+
+Then surf to http://localhost:8000
