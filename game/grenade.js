@@ -8,7 +8,7 @@ Engine.initObject("Grenade", "Ordinance", function() {
 		timeThrown: null,
 		pinTimer: 3000, // how long the grenade takes to explode
 		safeDistance: 40,
-        bounciness: 0.5,
+        bounciness: 1.15,
 
 		constructor: function(weapon) {
 			this.base(weapon);
@@ -56,7 +56,7 @@ Engine.initObject("Grenade", "Ordinance", function() {
 			return objCentre;
 		},
 
-		shrapnelCount: 15,
+		shrapnelCount: 150,
 		shrapnelTTL: 700,
 		explode: function() {
             var bouncer = this.shooter instanceof Player;

@@ -38,7 +38,7 @@ Engine.initObject("Firework", "Object2D", function() {
 			renderContext.popTransform();
 		},
 
-		sparkCount: 80,
+		sparkCount: 800,
 		explode: function() {
 			var particles = [];
 			for(var i = 0; i < this.sparkCount; i++)

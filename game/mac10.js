@@ -9,7 +9,7 @@ Engine.initObject("Mac10", "Weapon", function() {
 			this.roundsPerMinute = 1000;
 			this.projectilesPerShot = 1;
 			this.timeToReload = 2000;
-			this.projectileVelocityVariability = 0.5;
+			this.projectileVelocityVariability = 1;
 			this.dischargeDelay = 0;
 			this.timeRequiredForDeadAim = 1000;
 			this.ordinanceBaseSpeed = 15;

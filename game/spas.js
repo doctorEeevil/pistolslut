@@ -2,14 +2,14 @@ Engine.initObject("SPAS", "Weapon", function() {
 	var SPAS = Weapon.extend({
 
 		constructor: function(owner) {
-			this.clipCapacity = 6;
+			this.clipCapacity = 30;
             this.base(SPAS.getClassName(), owner, owner.field);
 
 			this.automatic = Weapon.SEMI_AUTOMATIC;
 			this.roundsPerMinute = 180;
-			this.projectilesPerShot = 5;
+			this.projectilesPerShot = 100;
 			this.timeToReload = 2000;
-			this.projectileVelocityVariability = 0.5;
+			this.projectileVelocityVariability = 1;
 			this.dischargeDelay = 0;
 			this.timeRequiredForDeadAim = 1000;
 			this.ordinanceBaseSpeed = 15;

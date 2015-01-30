@@ -175,7 +175,7 @@ Engine.initObject("Player", "Human", function() {
             return false;
         },
 
-		STARTING_HEALTH: 5,
+		STARTING_HEALTH: 7,
 		CAN_THROW_GRENADES: true,
 
         HEALTH_RELOAD_DELAY: 5000,
