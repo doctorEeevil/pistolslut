@@ -4,7 +4,7 @@ A 2D shoot-em-up platformer written in JavaScript.
 
 ## The original
 
-(http://pistolslut.com)[http://pistolslut.com]
+http://pistolslut.com
 
     By mary rose cook
     http://maryrosecook.com
