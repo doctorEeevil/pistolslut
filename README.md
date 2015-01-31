@@ -20,7 +20,7 @@ The code has been open sourced under the MIT license. Pistol Slut uses The Rende
 
 * made it easier by by overpowering the players weapons
 
-Or you can just (Play it now!)[https://cdn.rawgit.com/doctorEeevil/pistolslut/master/index.html]
+Or you can just [Play it now!](https://cdn.rawgit.com/doctorEeevil/pistolslut/master/index.html)
 
 ## During development
 
@@ -29,4 +29,4 @@ It requires a local server, which can be started like this
     `python -m SimpleHTTPServer`
 
 Then surf to 
-    (http://localhost:8000)[http://localhost:8000]
+    [http://localhost:8000](http://localhost:8000)
