@@ -10,13 +10,13 @@ Engine.initObject("Player", "Human", function() {
     identifier: null,
     keyMap: null, // the key bindings for this player
 
-    constructor: function(field, playerData, existingPlayers) {
+    constructor: function(field, playerData, existingPlayers, numberOfPlayers) {
       this.identifier = "player" + existingPlayers.length;
       this.turn(Collider.RIGHT);
       var startPosition = Point2D.create(playerData.startPosition.x + 20 * existingPlayers.length, playerData.startPosition.y);
       this.base("Player", field, startPosition, Player.STARTING_HEALTH, Player.AVAILABLE_WEAPONS, Player.CAN_THROW_GRENADES);
 
-      this.keyMap = Player.KEY_MAPS[existingPlayers.length];
+      this.keyMap = Player.KEY_MAPS[numberOfPlayers - 1][existingPlayers.length];
       this.add(KeyboardInputComponent.create("input"));
     },
 
@@ -146,8 +146,8 @@ Engine.initObject("Player", "Human", function() {
       return "Player";
     },
 
-    addPlayer: function(field, playerData) {
-      var player = Player.create(field, playerData, field.players);
+    addPlayer: function(field, playerData, numberOfPlayers) {
+      var player = Player.create(field, playerData, field.players, numberOfPlayers);
       field.players.push(player);
       field.renderContext.add(player);
     },
@@ -185,15 +185,39 @@ Engine.initObject("Player", "Human", function() {
 
     AVAILABLE_WEAPONS: ["M9", "Mac10", "SPAS"],
 
-    KEY_MAPS: [{
-      "left": 37, // left
-      "right": 39, // right
-      "jump": 38, // up
-      "crouch": 40, // down
-      "shoot": 49, // z
-      "cycle_weapon": 50, // x
-      "grenade": 51, // c
-    }, ],
+    KEY_MAPS: [
+      [ // ONE PLAYER MODE
+       { // player 1
+          "left": 37, // left
+          "right": 39, // right
+          "jump": 38, // up
+          "crouch": 40, // down
+          "shoot": 49, // z
+          "cycle_weapon": 50, // x
+          "grenade": 51, // c
+        }
+      ],
+      [ // TWO PLAYER MODE
+        { // player 1
+          "left": 68,         // d
+          "right":71,         // g
+          "jump": 82,         // r
+          "crouch": 70,       // f
+          "shoot": 49,        // 1
+          "cycle_weapon": 50, // 2
+          "grenade": 51,      // 3
+        },
+        { // player 2
+          "left": 37,         // left
+          "right": 39,        // right
+          "jump": 38,         // up
+          "crouch": 40,       // down
+          "shoot": 73,        // i
+          "cycle_weapon": 79, // o
+          "grenade": 80,      // p
+        }
+      ], 
+    ],
   });
 
   return Player;

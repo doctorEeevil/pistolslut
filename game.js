@@ -146,9 +146,8 @@ Engine.initObject("PistolSlut", "Game", function() {
     onKeyPress: function(event) {
       if (PistolSlut.isStartScreen == true) {
         var numberOfPlayers = 1;
-        // if(event.keyCode == 50) // 2 - start in two player mode
-        //     numberOfPlayers = 2;
-
+        if(event.keyCode == 50) // 2 - start in two player mode
+          numberOfPlayers = 2;
         PistolSlut.play(numberOfPlayers);
       }
     },
@@ -236,7 +235,7 @@ Engine.initObject("PistolSlut", "Game", function() {
 
       this.players = [];
       for (var i = 0; i < numberOfPlayers; i++)
-        Player.addPlayer(this, this.level.playerData);
+         Player.addPlayer(this, this.level.playerData, numberOfPlayers);
 
       this.addMeters();
       this.updateFramePosition(null, Player.getMainPlayer(this));
