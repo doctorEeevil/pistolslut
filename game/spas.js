@@ -2,7 +2,7 @@ Engine.initObject("SPAS", "Weapon", function() {
 	var SPAS = Weapon.extend({
 
 		constructor: function(owner) {
-			this.clipCapacity = 30;
+			this.clipCapacity = 3;
             this.base(SPAS.getClassName(), owner, owner.field);
 
 			this.automatic = Weapon.SEMI_AUTOMATIC;

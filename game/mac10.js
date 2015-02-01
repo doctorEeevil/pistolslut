@@ -7,7 +7,7 @@ Engine.initObject("Mac10", "Weapon", function() {
 
 			this.automatic = Weapon.AUTOMATIC;
 			this.roundsPerMinute = 1000;
-			this.projectilesPerShot = 1;
+			this.projectilesPerShot = 3;
 			this.timeToReload = 2000;
 			this.projectileVelocityVariability = 1;
 			this.dischargeDelay = 0;
@@ -26,7 +26,7 @@ Engine.initObject("Mac10", "Weapon", function() {
 		getClassName: function() { return "Mac10"; },
 
 		UNSTEADINESS: 20,
-		BASE_SPREAD: 3,
+		BASE_SPREAD: 4,
 	});
 
 	return Mac10;
