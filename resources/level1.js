@@ -9,8 +9,8 @@
 		signs: {
 			color: "#fff", letterSpacing: 7,
 			items: [
-				{ text: "Pistol  Slut", x: 89, y: 310, width: 140 },
-				{ text: "TEMPEST  ANARCHIST  LIBRARY", x: 805, y: 44, width: 245 },
+				{ text: "Pistol  Slut  Next  Gen", x: 89, y: 310, width: 140 },
+				{ text: "WE   SELL   BAGELS", x: 805, y: 44, width: 245 },
 				{ text: "FREE  SHOP", x: 1188, y: 311, width: 140 },
 			]
 		},
@@ -66,7 +66,7 @@
 			{ name: "bridgespotter", clazz: Enemy, x: 2400, y: 130, type: "cannonfodder" },
 			{ name: "bridgemortarer", clazz: Enemy, x: 2500, y: 130, type: "mortarer" },
 			{ name: "underbridge1", clazz: Enemy, x: 2510, y: 350, type: "cannonfodder" },
-			{ name: "underbridge2", clazz: Enemy, x: 2625, y: 350, type: "grunt" },
+			{ name: "underbridge2", clazz: Enemy, x: 2625, y: 350, type: "cannonfodder" },
 			{ name: "underbridge3", clazz: Enemy, x: 2900, y: 350, type: "captain" },
 			{ name: "bunker1", clazz: Enemy, x: 3325, y: 350, type: "captain" },
             { name: "areabeforeparkmortarer", clazz: Enemy, x: 3900, y: 350, type: "mortarer" },
@@ -80,7 +80,7 @@
 			color: "#fff",
 			items: [
 				{ identifier: "speechMortarGuy", text: "CONTACT  LEFT.  COVER.", x: 1070, b: 320, width: 100 },
-				{ identifier: "speechBunkerMortarGuy", text: "OH  NO  SHE'S  HERE", x: 3880, b: 320, width: 70 },
+				{ identifier: "speechBunkerMortarGuy", text: "TERRIBLE ENDING INCOMING", x: 3880, b: 320, width: 70 },
 			]
 		},
 
